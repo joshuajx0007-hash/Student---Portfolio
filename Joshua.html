@@ -1,0 +1,274 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>STUDENTS PORTFOLIO</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+< ! DOCTYPE html >
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name ="viewport"
+content="width=device-width, initial-scale=1.0">
+   <title>student
+Portfolio</title>
+   <link rel="stylesheet"
+href="style. css">
+   <script defer
+src="script. js"></script >
+</head>
+<body>
+ 
+
+       <! - - Navbar - ->
+        <header>
+           <nav class="navbar">
+              <div class="logo">Myportfolio</div> 
+<ul class="nav-links"   id="nav-links">
+   <li><a href="#home">Home</a></li>
+<li><a href="#about">About </a></li>
+<li><a href="#projects">projects</a></li>
+<li><a href="#contact">contact </a></li>
+</ul>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+ </nav>
+</header>
+   
+      <!- - -Hero section - ->
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>NaliniPriyan .R</span></h1>
+    <p>A passionate student learning web development🚀</p>
+   <a href="#projects"class="btn">view My work</a>
+    </div>
+ </section>
+    
+
+   <! - -About section - ->
+  <section id="about" class="about">
+        <h2>About Me</h2>
+       <div class="about-content">
+     <img src="Nanthini M2.jpeg" alt="profile photo">
+    <p>
+         I am a student enthusiastic about technology and design. I love building interactive, user-friendly web application 
+and exploring new tools in    the tech world.
+           </p>
+       </div>
+     </section>
+
+    <!- -projects section - ->
+    <section id="projects" class="projects ">
+        <h2>My projects</h2>
+     <div class="project-grid">
+         <div class="project-card">
+           <h3>project 1</h3>
+         <p>A simple responsive website.
+</p>
+            </div>
+           <div class="project-card">
+             <h3>project 2</h3>
+           <p>JavaScript-based quiz app.
+</p>
+          </div>
+         <div class="project-card">
+           <h3>project 3</h3>
+         <p>personal blog with CMS.</p>
+        </div>
+      </div>
+     </section>
+
+     <!- - contact section - ->
+    <section id="contact" class="contact">
+           <h2>contact Me</h2>
+          <form id="contact-form">
+          <input type="text" id="name" 
+placeholder="your name" required>
+           <input type="email" id="email" placeholder="your email" required></textarea>
+      <button
+type="submit">sent</button>
+        </form>
+       <p id="form-status"></p>
+     </section>
+
+
+<footer>
+    <p>&copy; 2025 Your Name | All rights reserved</p>
+    </footer>
+
+</body>
+  </html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+<style>/*  General Styless */
+body {
+    margin:  0;
+    font-family: Arial, sans-serif;
+  Scroll-behavior: smooth;
+}
+  header {
+       background: 🔳#333;
+        Color: ◽white;
+       padding: 10px 20px;
+}
+. navbar {
+     display: flex;
+     justify-content: space-between;
+ align-items: center;
+}
+. nav-links {
+    list-style: none;
+     display: flex;
+}
+. nav-links li {
+    margin: 0 10px;
+}
+. nav-links a {
+ color: ◽white;
+ text-decoration: none;
+}
+.menu-toggle {
+  display:none;
+   font-size: 24px;
+   cursor: pointer;
+}
+/* Hero section */
+. hero {
+     background: linear-gradient(to right,◽#4facfe, ◾#00f2fe);
+  Color: ◽white;
+  text-align: center;
+  Padding: 60px 20px;
+}
+. hero h1 span{
+      Color: 🟨yellow;
+ }
+. btn {
+     backgroud: ◽white;
+     Color: 🔳#333;
+     padding: 10px 20px;
+     text-decoration: none;
+      margin-top: 20px;
+     display: inline-block;
+     border-radius: 5px;
+}
+/* About Section */
+. about {
+    padding: 40px 20px
+    text-align: center;
+}
+. about-content {
+     display: flex;
+     flex-wrap:wrap;
+     justify-content: center;
+     align-items: center;
+}
+. about-content img {
+     max-width: 150px;
+     border-radius: 50%;
+     margin: 20px;
+}
+/* Projects Section */
+. projects {
+   padding:40px 20px
+  backgroud; ◽#f4f4f4;
+  text-align: center;
+}
+. project-grid {
+    display: grid;
+     grid-template-colums: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+. project-card {
+     background:  ◽white;
+      padding: 20px;
+     border-radius: 10px;
+     transition: transform 0.3s;
+}
+. project-card:hover {
+     transform: scale(1.05);
+}
+/* contact section  */
+. contact {
+     padding: 40px 20px;
+    text-align: center;
+}
+form{
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px; 
+    margin: 10px 0;
+}
+button {
+    backgroud: 🟦#4facfe;
+    Color: ◽white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+     cursor: pointer;
+}
+button. hover
+     background: 🟦#00c6ff;
+}
+/* Footer */
+footer {
+  backgroud: 🔳#333;
+   Color: ◽white;
+    padding: 10px;
+     text-align: center;
+}
+/* Responsive Navbar */
+@media screen and(max-width: 768px) {
+ . nav-links {
+ display: none;
+   flex-direction: column;
+    backgroud: 🔳#333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+}
+. nav-links. show {
+  display: flex;
+}
+. menu-toggl {
+    display: block;
+    }
+}</style><script>// Toggle  mobile menu
+const menuToggle =document. getElementById("menu-toggle ");
+const navLinks =document. getElementById("nav-links");
+
+menuToggle. addventListener("click, () => {
+ navLinks. classList. toggle("show");
+});
+
+// Simple contact form validation
+ const contactForm =document.getElementById("contact-form");
+const formstatus =document. GetElementById(" form-status ");
+
+contactForm. addventListener("submit", (e)    
+=> {
+ e. preventDefault();
+
+const name =document. getElementById("name"). value. trim();
+const email =document.getElementById 
+("email"). value. trin();
+const message =document. getElementById("message").value. trin();
+
+if (name && email && message) {
+   formstatus. textcontent="✅ Message sent successfully!";
+    formstatus. style. color="green";
+    contactForm. reset();
+} else {
+     formstatus. textcontent ="❎ please fill in all fields.";
+     formstatus. style. color ="red";
+}
+});</script>
